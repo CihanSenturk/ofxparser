@@ -1,0 +1,57 @@
+{
+    "name": "cihansenturk/ofxparser",
+    "version": "1.0.0",
+    "description": "Modern, secure, and type-safe OFX/QFX parser for PHP 8.1+ with comprehensive date format support and XXE protection",
+    "keywords": [
+        "ofx",
+        "qfx",
+        "open financial exchange",
+        "quicken",
+        "finance",
+        "parser",
+        "bank statement",
+        "investment",
+        "php8",
+        "type-safe"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Cihan Şentürk",
+            "email": "cihansenturk96@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "homepage": "https://github.com/CihanSenturk/ofxparser",
+    "support": {
+        "issues": "https://github.com/CihanSenturk/ofxparser/issues",
+        "source": "https://github.com/CihanSenturk/ofxparser"
+    },
+    "require": {
+        "php": "^8.1"
+    },
+    "require-dev": {
+        "ergebnis/composer-normalize": "^2.13",
+        "phpunit/phpunit": "^9.5",
+        "squizlabs/php_codesniffer": "^3.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "CihanSenturk\\OfxParser\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "CihanSenturk\\OfxParser\\Tests\\": "tests/"
+        }
+    },
+    "replaces": [
+        "asgrim/ofxparser",
+        "mehmetcoban/ofxparser"
+    ],
+    "config": {
+        "allow-plugins": {
+            "ergebnis/composer-normalize": true
+        }
+    }
+}
