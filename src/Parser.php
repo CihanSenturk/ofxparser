@@ -47,6 +47,11 @@ class Parser
         $ofxContent = $this->conditionallyAddNewlines($ofxContent);
 
         $sgmlStart = stripos($ofxContent, '<OFX>');
+
+        if ($sgmlStart === false) {
+            throw new ParseException('Could not find <OFX> tag in the provided content.');
+        }
+
         $ofxSgml = trim(substr($ofxContent, $sgmlStart));
 
         $ofxXml = $this->convertSgmlToXml($ofxSgml);
