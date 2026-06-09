@@ -1,6 +1,6 @@
 {
     "name": "cihansenturk/ofxparser",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Modern, secure, and type-safe OFX/QFX parser for PHP 8.1+ with comprehensive date format support and XXE protection",
     "keywords": [
         "ofx",
